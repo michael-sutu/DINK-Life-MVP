@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>DINK Life</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <script src="https://kit.fontawesome.com/0fc9577f47.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="split full-width">
+        <div class="start">
+            <img src="/img/logo.png" height="35">
+            <div class="search-input">
+                <img src="/icons/search.svg">
+                <input placeholder="Search">
+            </div>
+        </div>
+        <div class="start" id="right-options">
+            <a class="center"><img src="/icons/bell.svg"></a>
+            <a class="center"><img src="/icons/message.svg"></a>
+            <div class="start">
+                <img src="/img/person.png" height="40">
+                <a>John Doe</a>
+                <img src="/icons/dropdown.svg">
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidenav column split">
+        <div class="start column sidenav-options">
+            <a href="/home" class="start"><img src="/icons/home.svg">Home</a>
+            <a href="/messages" class="start"><img src="/icons/messages.svg">Messages</a>
+            <a href="/vision-board" class="start"><img src="/icons/board.svg">Vision Board</a>
+            <a href="/mind-map" class="start"><img src="/icons/grid.svg">Mind Map</a>
+            <a href="/journal-notes" class="start"><img src="/icons/pencil-solid.svg">Journal Notes</a>
+            <a href="/profile" class="start"><img src="/icons/profile.svg">Profile</a>
+            <button class="white-btn">Post</button>
+        </div>
+        <div class="end column sidenav-options">
+            <a class="start"><img src="/icons/settings.svg">Settings</a>
+            <a class="start"><img src="/icons/help.svg">Help & Support</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="top">
+            <h2>Journal Notes</h2>
+        </div>
+    </main>
+
+    <div id="loading"></div>
+
+    <div id="message-container"></div>
+
+    <div id="popup"></div>
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>

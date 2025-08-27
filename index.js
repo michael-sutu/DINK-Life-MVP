@@ -12,6 +12,7 @@ sgMail.setApiKey(process.env.SENDGRID_KEY)
 
 app.use("/src", express.static(__dirname + "/src"))
 app.use("/img", express.static(__dirname + "/img"))
+app.use("/icons", express.static(__dirname + "/icons"))
 app.use(express.json())
 
 function random(length) {
@@ -54,6 +55,34 @@ async function sendEmail(to, subject, text) {
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html")
+})
+
+app.get("/login", (req, res) => {
+    res.sendFile(__dirname + "/public/login.html")
+})
+
+app.get("/home", (req, res) => {
+    res.sendFile(__dirname + "/public/home.html")
+})
+
+app.get("/messages", (req, res) => {
+    res.sendFile(__dirname + "/public/messages.html")
+})
+
+app.get("/vision-board", (req, res) => {
+    res.sendFile(__dirname + "/public/vision-board.html")
+})
+
+app.get("/mind-map", (req, res) => {
+    res.sendFile(__dirname + "/public/mind-map.html")
+})
+
+app.get("/journal-notes", (req, res) => {
+    res.sendFile(__dirname + "/public/journal-notes.html")
+})
+
+app.get("/profile", (req, res) => {
+    res.sendFile(__dirname + "/public/profile.html")
 })
 
 app.listen(8000, async () => {
